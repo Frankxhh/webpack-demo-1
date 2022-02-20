@@ -4,6 +4,10 @@ const { Template } = require('webpack');
 
 module.exports = {
     mode: 'development',
+    devtool:'inline-source-map',
+    devServer:{
+        contentBase:'./dist',
+    },
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
